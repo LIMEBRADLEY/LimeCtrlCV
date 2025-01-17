@@ -1,0 +1,55 @@
+{
+  "name": "limeCtrlCV",
+  "version": "1.0.0",
+  "description": "A clipboard manager for macOS",
+  "author": "Shaoqing XU <Bradley.xsq@gmail.com>",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "pack": "electron-builder --dir"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  },
+  "devDependencies": {
+    "electron": "^33.3.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.bradley.lime-ctrlcv",
+    "productName": "Lime-CtrlCV",
+    "copyright": "Copyright © 2024 ${author}",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "build/icon.icns",
+      "target": ["dmg", "zip"],
+      "darkModeSupport": true,
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 400
+      }
+    },
+    "directories": {
+      "buildResources": "build"
+    }
+  }
+}
