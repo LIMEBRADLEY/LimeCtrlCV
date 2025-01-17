@@ -1,9 +1,45 @@
-# Lime-CtrlCV
+# Lime-CtrlCV 完全免费 本地化运行 
 
-## 项目简介
+<div align="center">
+  <img src="build/lime.png" alt="Lime-CtrlCV Logo" width="128px" height="128px">
+</div>
+
+## 🚀 快速开始
+<img src="build/img.png" alt="在这里插入图片描述" width="300"/>
+
+### 环境要求
+- Node.js >= 14.0.0
+- npm >= 6.0.0
+- Git
+
+### 本地运行
+
+1. 克隆项目
+```bash
+
+git clone https://github.com/LIMEBRADLEY/LimeCtrlCV.git
+cd Lime-CtrlCV
+```
+2. 安装依赖
+```bash
+
+npm install
+```
+3. 启动项目
+```bash
+
+npm start
+```
+4. 打包应用
+```bash
+
+npm run build
+```
+
+## 📖 项目简介
 Lime-CtrlCV 是一个为 macOS 设计的剪贴板管理工具，旨在帮助用户更高效地管理和使用剪贴板内容。支持多种类型的内容管理，包括文本、图片、文件等，并提供便捷的搜索和预览功能。
 
-## 功能特性
+## ✨ 功能特性
 - 多类型内容支持
   - 文本：普通文本、URL链接
   - 图片：支持预览和缩放
@@ -21,37 +57,34 @@ Lime-CtrlCV 是一个为 macOS 设计的剪贴板管理工具，旨在帮助用�
   - 系统托盘常驻
   - 原生窗口样式
 
-## 技术实现
+## 🛠 技术实现
 ### 核心技术
 - Electron：跨平台桌面应用框架
 - Electron Store：本地数据持久化
 - Bootstrap：UI框架和图标库
 
-### 项目结构 
+### 项目结构
+limeCtrlCV/
 
-## 版权和许可
+├── main.js # 主进程：窗口管理、系统集成
+
+├── renderer.js # 渲染进程：UI交互、剪贴板处理
+
+├── index.html # 界面布局和样式
+
+├── package.json # 项目配置
+
+└── build/ # 构建资源
+
+
+
+## 📝 版权和许可
 
 MIT License
 
-Copyright (c) 2024 Shaoqing XU
+Copyright (c) 2024 Shaoqing XU, Lime Bradley.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+[标准 MIT 许可证文本]
 
 ### 附加条款
 1. 本项目仅供学习和参考使用。
@@ -69,12 +102,7 @@ SOFTWARE.
 2. 您拥有所提交内容的完整著作权或已获得相应授权。
 3. 您授予项目维护者永久性的、全球范围内的许可，允许使用您的贡献。
 
-### 联系方式
-如有任何版权相关问题，请联系：
-- 邮箱：Bradley.xsq@gmail.com
-- GitHub：[项目地址] 
-
-### 免责声明
+## ⚠️ 免责声明
 
 1. 使用责任
    - 本软件按"现状"提供，使用者需自行承担使用风险。
@@ -91,19 +119,7 @@ SOFTWARE.
    - 用户应遵守相关法律法规，合法使用第三方内容。
    - 本软件不对第三方内容的准确性、合法性负责。
 
-4. 服务保证
-   - 不保证软件完全无错误或始终可用。
-   - 不保证软件能满足用户的所有需求。
-   - 作者保留随时修改或终止服务的权利。
-
-5. 知识产权
-   - 用户应确保其使用行为不侵犯他人知识产权。
-   - 不得将本软件用于任何违法或侵权活动。
-   - 发现任何侵权行为请及时通知作者。
-
-6. 更新和维护
-   - 作者没有义务提供技术支持或更新服务。
-   - 软件更新可能会导致功能变化。
-   - 用户可自行选择是否安装更新版本。
-
-注意：使用本软件即表示您已阅读并同意以上免责声明的全部内容。如有异议，请立即停止使用。 
+## 📞 联系方式
+- 作者：Shaoqing XU （Lime Bradley）
+- 邮箱：Bradley.xsq@gmail.com
+- Coded by Cursor
